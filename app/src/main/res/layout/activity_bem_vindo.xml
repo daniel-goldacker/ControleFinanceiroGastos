@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_tela_laranja"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTituloTipoLancamento"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="Seja Bem Vindo!"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_weight="0.24"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_boneco" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="0.02"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="@drawable/theme_edittext"
+            android:drawableLeft="@drawable/ic_usuario"
+            android:ems="10"
+            android:gravity="top|center"
+            android:hint="Nome do Usuário"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTipoLancamento"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_vertical|center"
+            android:text="Você acabou de instalar o saveMoney. Para prosseguir, precisamos que você informe o seu nome!"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btSalvarNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="@drawable/theme_button"
+            android:text="Começar" />
+    </LinearLayout>
+
+</LinearLayout>

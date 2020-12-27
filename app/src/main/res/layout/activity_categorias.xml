@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/theme_tela"
+    android:orientation="vertical"
+    tools:context=".TelaMenu" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/vSeparadorCategoria0"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="0dp"
+            android:text="Categoria"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Divisor1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/vSeparadorCategoria1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvTituloTipoLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center|center_vertical"
+            android:gravity="bottom"
+            android:text="Lista de Categorias"
+            android:textColor="#001e95"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvLancamentos"
+            android:layout_width="fill_parent"
+            android:layout_height="330dp"
+            android:layout_weight="0.53" >
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

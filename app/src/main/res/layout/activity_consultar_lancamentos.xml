@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/theme_tela"
+    android:orientation="vertical"
+    tools:context=".TelaMenu" >
+
+    <View
+        android:id="@+id/vSeparadorCategoria1"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RadioGroup
+            android:id="@+id/rgTipoLancamentos2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbTodos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:checked="true"
+                android:text="Todos"
+                android:textColor="@android:color/holo_blue_light"
+                android:textColorHint="@android:color/holo_green_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbDespesa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:checked="false"
+                android:text="Despesa"
+                android:textColor="@android:color/holo_red_light"
+                android:textColorHint="@android:color/holo_red_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbReceita2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:text="Receita"
+                android:textColor="@android:color/holo_green_light"
+                android:textColorHint="@android:color/holo_green_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vSeparadorCons1"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvImagemLanCategoria2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_categorias"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spCategoria2"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vSeparadorCons2"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvImagemDataLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_data" />
+
+        <TextView
+            android:id="@+id/tvDataConsulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.71"
+            android:text="DataConsulta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEspaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     " />
+
+        <CheckBox
+            android:id="@+id/cbConsideraData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.45"
+            android:checked="true"
+            android:text="Considerar Data."
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vSeparadorCons3"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <View
+        android:id="@+id/vDivisorCons1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#C0C0C0" />
+
+    <View
+        android:id="@+id/vSeparadorCons4"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lvConsLancamento"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

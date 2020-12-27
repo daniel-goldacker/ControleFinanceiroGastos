@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item
+        android:id="@+id/grafico"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/grafico"
+        android:icon="@drawable/ic_grafico" android:checkable="true"/>
+     
+     <item
+        android:id="@+id/voltar"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/voltar"
+        android:icon="@drawable/ic_volta"/>
+
+</menu>

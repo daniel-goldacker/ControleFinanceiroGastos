@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_tela"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/vEspacoVisCon0"
+            android:layout_width="12dp"
+            android:layout_height="23dp" />
+
+        <TextView
+            android:id="@+id/tvTituloTipoLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Lançamento: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTipoLancamento"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="tvTipoLancamento" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/vEspacoVisCon1"
+            android:layout_width="12dp"
+            android:layout_height="23dp" />
+
+        <TextView
+            android:id="@+id/tvCatLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Categoria: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="tvTipoCategoria" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/vEspacoVisCon2"
+            android:layout_width="12dp"
+            android:layout_height="23dp" />
+
+        <TextView
+            android:id="@+id/tvDatLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDataLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvData" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/vEspacoVisCon3"
+            android:layout_width="12dp"
+            android:layout_height="23dp" />
+
+        <TextView
+            android:id="@+id/tvDescLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvImagemValorLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tvDescricao" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.42"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/vEspacoVisCon4"
+            android:layout_width="12dp"
+            android:layout_height="23dp" />
+
+        <TextView
+            android:id="@+id/tvValorLan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Valor:  R$"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvValorLancamento"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:gravity="center|left"
+            android:text="tvValor"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivTipoLancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.28"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+</LinearLayout>
